@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+//import 'package:quotesbylegends/gridView/gridScreen.dart';
+import 'package:quotesbylegends/listView/listScreen.dart';
+import 'package:quotesbylegends/quotes.dart';
 
 void main() => runApp(MaterialApp(
       title: "100 Quotes by Legends",
       home: QuotesByLegends(),
+      debugShowCheckedModeBanner: false,
     ));
 
 class QuotesByLegends extends StatelessWidget {
@@ -10,15 +14,7 @@ class QuotesByLegends extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.center,
-                end: Alignment.bottomCenter,
-                colors: <Color>[Colors.black, Colors.white]),
-          ),
-        ),
+        backgroundColor: Color.fromRGBO(09, 27, 39, 1),
         leading: IconButton(
           icon: Icon(
             Icons.menu,
@@ -41,9 +37,8 @@ class QuotesByLegends extends StatelessWidget {
         ],
         elevation: 0,
       ),
-      body: Center(
-        child: Text("100 Quotes by Legends"),
-      ),
+      body: Container(child: ListViewScreen(quotesdata: quotes)),
+backgroundColor:Color.fromRGBO(9,27,39,1) ,
     );
   }
 }
