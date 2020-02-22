@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-//import 'package:quotesbylegends/gridView/gridScreen.dart';
-import 'package:quotesbylegends/listView/listScreen.dart';
 import 'package:quotesbylegends/quotes.dart';
+import './views/listScreen.dart';
 
 void main() => runApp(MaterialApp(
       title: "100 Quotes by Legends",
@@ -37,8 +36,10 @@ class QuotesByLegends extends StatelessWidget {
         ],
         elevation: 0,
       ),
-      body: Container(child: ListViewScreen(quotesdata: quotes)),
-backgroundColor:Color.fromRGBO(9,27,39,1) ,
+      body: Container(
+        child: ListViewScreen(quotesdata: quotes),
+      ),
+      backgroundColor: Color.fromRGBO(9, 27, 39, 1),
     );
   }
 }
