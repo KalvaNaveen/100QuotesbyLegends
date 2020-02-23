@@ -1,15 +1,15 @@
-const List quotes = [
-  {'author': 'Madhumitha', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Yogi', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Radha', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Mahesh', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Naveen', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Yogi', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Radha', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Mahesh', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Naveen', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Yogi', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Radha', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Mahesh', 'image': 'Image URL', 'quote': 'some Quotes'},
-  {'author': 'Naveen', 'image': 'Image URL', 'quote': 'some Quotes'}
+ List quotes = [
+  {'author': 'Madhumitha', 'imageUrl': 'xxxxxxx', 'quote': 'some Quotes'},
+  {'author': 'Yogi', 'imageUrl': 'xxxxxx', 'quote': 'some Quotes'},
+  {'author': 'Radha', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'},
+  {'author': 'Mahesh', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'},
+  {'author': 'Naveen', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'},
+  {'author': 'Yogi', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'},
+  {'author': 'Radha', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'},
+  {'author': 'Mahesh', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'},
+  {'author': 'Naveen', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'},
+  {'author': 'Yogi', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'},
+  {'author': 'Radha', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'},
+  {'author': 'Mahesh', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'},
+  {'author': 'Naveen', 'imageUrl': 'imageUrl URL', 'quote': 'some Quotes'}
 ];
