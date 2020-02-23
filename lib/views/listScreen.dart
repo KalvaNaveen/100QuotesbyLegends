@@ -17,37 +17,49 @@ class _ListViewScreenState extends State<ListViewScreen> {
   Widget build(BuildContext context) {
     return ListView.builder(
       scrollDirection: vertical,
-      padding: const EdgeInsets.all(8),
+      // padding: const EdgeInsets.all(8),
       itemCount: widget.quotesdata.length,
       itemBuilder: (BuildContext context, int index) {
+        Map x = widget.quotesdata[index];
+        String author, quote;
+        var imageURL;
+        x.keys.forEach((f) => {
+              (f == 'author')
+                  ? author = x['author']
+                  : (f == 'imageUrl')
+                      ? imageURL = x['imageUrl']
+                      : quote = x['quote']: quote = x['quote']
+            });
+        if (imageURL == null) imageURL = 'images/dummy.jpg';
         return Container(
-          height: 150,
-          margin: const EdgeInsets.symmetric(vertical: 10),
+          height: 220,
+          padding: const EdgeInsets.only(bottom: 5),
+          margin: const EdgeInsets.all(8),
           decoration: BoxDecoration(
-            
-            borderRadius: BorderRadius.all(Radius.circular(12)),
-            image: DecorationImage(
-              colorFilter: ColorFilter.mode(Colors.black54, BlendMode.overlay),
-              image: AssetImage('images/oprah_winfrey.jpg'),
-              fit: BoxFit.cover,
-              
-            ),
-          ),
+              border: Border.all(width: .5, color: Colors.grey),
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+              image: DecorationImage(
+                colorFilter:
+                    ColorFilter.mode(Colors.black54, BlendMode.overlay),
+                image: AssetImage(imageURL),
+                fit: BoxFit.cover,
+              ),
+              color: Colors.grey),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               ListTile(
-                
                 title: Text(
-                  '"You become what you believe."',
-                  style: TextStyle(color: Colors.white70),
+                  '"$quote"',
+                  style: TextStyle(color: Colors.white, fontSize: 16),
                 ),
                 subtitle: Align(
                   alignment: Alignment.bottomRight,
                   child: Text(
-                    '- Oprah Winfrey',
-                    style: TextStyle(color: Colors.white38),
+                    '- $author',
+                    style: TextStyle(
+                        color: Colors.white.withOpacity(.65), fontSize: 14),
                   ),
                 ),
               ),
