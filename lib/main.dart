@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quotesbylegends/quotes.dart';
+import './views/shareScreen.dart';
 import './views/listScreen.dart';
 
 void main() => runApp(MaterialApp(
@@ -13,7 +14,7 @@ class QuotesByLegends extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(09, 27, 39, 1),
+        backgroundColor: Color.fromRGBO(4, 12, 29, .2),
         leading: IconButton(
           icon: Icon(
             Icons.menu,
@@ -37,9 +38,13 @@ class QuotesByLegends extends StatelessWidget {
         elevation: 0,
       ),
       body: Container(
-        child: ListViewScreen(quotesdata: quotes),
-      ),
-      backgroundColor: Color.fromRGBO(9, 27, 39, 1),
+           child:
+          //  FullViewScreen(
+           //   quote: quotes) 
+          ListViewScreen(quotesdata: quotes),
+          ),
+      backgroundColor: Color.fromRGBO(4, 12, 29, .2),
+      
     );
   }
 }

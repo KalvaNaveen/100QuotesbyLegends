@@ -1,8 +1,5 @@
-
-import 'dart:convert';
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+import 'package:quotesbylegends/views/shareScreen.dart';
 
 class ListViewScreen extends StatefulWidget {
   final List<Object> quotesdata;
@@ -22,26 +19,28 @@ class _ListViewScreenState extends State<ListViewScreen> {
       scrollDirection: vertical,
       padding: const EdgeInsets.all(8),
       itemCount: widget.quotesdata.length,
-      itemBuilder: (BuildContext context, int index) {         
+      itemBuilder: (BuildContext context, int index) {
         return Container(
           height: 150,
           margin: const EdgeInsets.symmetric(vertical: 10),
           decoration: BoxDecoration(
+            
             borderRadius: BorderRadius.all(Radius.circular(12)),
             image: DecorationImage(
-                colorFilter:
-                    ColorFilter.mode(Colors.black54, BlendMode.overlay),
-                image: AssetImage('images/oprah_winfrey.jpg'),
-                fit: BoxFit.cover),
+              colorFilter: ColorFilter.mode(Colors.black54, BlendMode.overlay),
+              image: AssetImage('images/oprah_winfrey.jpg'),
+              fit: BoxFit.cover,
+              
+            ),
           ),
-          
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-             
               ListTile(
-                title: Text('"You become what you believe."',
+                
+                title: Text(
+                  '"You become what you believe."',
                   style: TextStyle(color: Colors.white70),
                 ),
                 subtitle: Align(
