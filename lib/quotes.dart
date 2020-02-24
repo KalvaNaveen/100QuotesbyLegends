@@ -530,7 +530,7 @@ List quotes = [
   }
   ,{
     'author': 'Anaïs Nin',
-    'imageUrl': 'images/Anaïs_Nin.jpg',
+    'imageUrl': 'images/Anais_Nin.jpg',
     'quote':
         'Life shrinks or expands in proportion to one\'s courage.'
   }

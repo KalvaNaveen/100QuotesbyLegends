@@ -20,7 +20,7 @@ class _ListViewScreenState extends State<ListViewScreen> {
       // padding: const EdgeInsets.all(8),
       itemCount: widget.quotesdata.length,
       itemBuilder: (BuildContext context, int index) {
-        print(index);
+       
         Map x = widget.quotesdata[index];
         String author, quote;
         var imageURL;
